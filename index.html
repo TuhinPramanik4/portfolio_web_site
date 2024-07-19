@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello-Tuhin</title>
+    <link rel="stylesheet" href="Navbar.css">
+    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="About.css">
+    <link rel="stylesheet" href="Skills.css">
+    <link rel="stylesheet" href="Project.css">
+    <link rel="stylesheet" href="Contact.css">
+</head>
+<body>
+    <nav>
+        <ul class="hamburger">
+            <li onclick="HideIt()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="20" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5M10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5"/>
+              </svg></a></li>
+            <li ><a href="#about" onclick="location.href='./#about' ">About</a></li>
+            <li ><a href="#contact"onclick="location.href='./#contact'">Contacts</a></li>
+            <li><a href="#skills"onclick="location.href='./#skills' ">Skills</a></li>
+            <!-- <li><a href="#progress"onclick="location.href='./#progress' ">Daily-Progress</a></li> -->
+            
+        </ul>
+        <ul>
+            <li class="hideOnMobile" ><a href="#about" onclick="location.href='./#about' ">About</a></li>
+            <li class="hideOnMobile" ><a href="#contact"onclick="location.href='./#contact' ">Contacts</a></li>
+            <li class="hideOnMobile" ><a href="#skills"onclick="location.href='./#skills' ">Skills</a></li>
+            <!-- <li class="hideOnMobile" ><a href="#progress"onclick="location.href='./#progress' ">Daily-Progress</a></li> -->
+            <li  class="menu-button"  onclick="showHamburger()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-backpack2" viewBox="0 0 16 16">
+                <path d="M4.04 7.43a4 4 0 0 1 7.92 0 .5.5 0 1 1-.99.14 3 3 0 0 0-5.94 0 .5.5 0 1 1-.99-.14"/>
+                <path fill-rule="evenodd" d="M4 9.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-.5.5h-7a.5.5 0 0 1-.5-.5zm1 .5v3h6v-3h-1v.5a.5.5 0 0 1-1 0V10z"/>
+                <path d="M6 2.341V2a2 2 0 1 1 4 0v.341c2.33.824 4 3.047 4 5.659v1.191l1.17.585a1.5 1.5 0 0 1 .83 1.342V13.5a1.5 1.5 0 0 1-1.5 1.5h-1c-.456.607-1.182 1-2 1h-7a2.5 2.5 0 0 1-2-1h-1A1.5 1.5 0 0 1 0 13.5v-2.382a1.5 1.5 0 0 1 .83-1.342L2 9.191V8a6 6 0 0 1 4-5.659M7 2v.083a6 6 0 0 1 2 0V2a1 1 0 0 0-2 0M3 13.5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5V8A5 5 0 0 0 3 8zm-1-3.19-.724.362a.5.5 0 0 0-.276.447V13.5a.5.5 0 0 0 .5.5H2zm12 0V14h.5a.5.5 0 0 0 .5-.5v-2.382a.5.5 0 0 0-.276-.447L14 10.309Z"/>
+              </svg></a></li>
+        </ul>
+    </nav>
+     <section id="profile">
+        <div class="section_pic-container">
+            <img src="MyPhoto.jpg" width="250px"   alt="MyPhoto">
+        </div>
+        <div class="section_text">
+            <p class="section_text_p1">Hello, I'm</p>
+            <div class="title">Tuhin</div>
+            <p class="section_text_p2">Web Developer</p>
+             <div class="btn_container">
+                <button class="btn btn-color-2" onclick="window.open('resume.pdf')">
+                    Download CV</button>
+                    <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                        Contact
+                    </button>
+             </div>
+             <div class="social_container">
+                <a class="icon" href="https//instagram.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                  </svg></a>
+                  <a class="icon" href="https//:linkedin.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                  </svg></a>
+             </div>
+        </div>
+     </section>
+     <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h class="title">About Me</h>
+        <div class="sction_container">
+            <div class="about_container">
+                <div class="about_containers">
+                    <div class="details_container">
+                        <img src="person-workspace.svg" alt="i">
+                        <h1>Experience</h1>
+                        <p>Fresher<br>Web Developer</p>
+                    </div>
+                    <div class="details_container">
+                        <img src="book-fill.svg" alt="e">
+                        <h1>Education</h1>
+                        <p>B-Tech in Computer Science<br> Sister Nivedita University</p>
+                    </div>
+                </div>
+                <div class="text_container">
+                    Hello,
+
+                    I am Tuhin Pramanik, a passionate programmer currently pursuing a B.Tech in Computer Science at Sister Nivedita University. I have a strong interest in competitive programming (CP) and web development, and I excel in data structures and algorithms (DSA).
+                </div>
+            </div>
+        </div>
+        <img src="arrow-down-circle-fill.svg" alt="arrow" class="icon arrow" onclick="location.href='./#skills' ">
+     </section>
+     <section id="skills">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Skills</h1>
+        <div class="Skills_details_container">
+            <div class="about_containers">
+                <div class="details_containers">
+                    <h2 class="experience-sub-title">Web dev</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="patch-check-fill.svg" alt="check" class="icon">
+                            <h3>HTML</h3>
+                        </article>
+                        <article>
+                            <img src="patch-check-fill.svg" alt="check" class="icon">
+                            <h3>CSS</h3>
+                        </article>
+                        <article>
+                            <img src="patch-check-fill.svg" alt="check" class="icon">
+                            <h3>Node.JS</h3>
+                        </article>
+                        <article>
+                            <img src="patch-check-fill.svg" alt="check" class="icon">
+                            <h3>Express.Js</h3>
+                        </article>
+                    </div>
+                </div>
+                <div class="details_containers">
+                    <h2 class="experience-sub-title">Programming Languages </h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="patch-check-fill.svg" alt="check" class="icon">
+                            <h3>Java-Script</h3>
+                        </article>
+                        <article>
+                            <img src="patch-check-fill.svg" alt="check" class="icon">
+                            <h3>C</h3>
+                        </article>
+                        <article>
+                            <img src="patch-check-fill.svg" alt="check" class="icon">
+                            <h3>CPP</h3>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="arrow-down-circle-fill.svg" alt="arrow" class="icon arrow" onclick="location.href='./#contact' ">
+     </section>
+
+    <sectio  id="contact">
+             <div class="contact-container">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <div class="contact-left-title">
+                        <h2>Get in touch</h2>
+                        <hr>
+                    </div>
+                    <input type="hidden" name="access_key" value="7f7e11fe-744c-4dff-a139-82711e424fd8">
+                    <input type="text" name="name" placeholder="Enter your name" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="Enter your email" class="contact-inputs" required> 
+                     <textarea name="message" placeholder=" Enter your message" class="contact-inputs" required>
+
+                     </textarea>
+                     <button type="submit">submit</button>
+                </form>
+                <div class="contact-right">
+                    <div class="social_container">
+                        <a class="icon" href="https://leetcode.com/u/tuhinp475/"><svg width="26" height="26" viewBox="0 0 95 111" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-full w-auto max-w-none"><path d="M68.0063 83.0664C70.5 80.5764 74.5366 80.5829 77.0223 83.0809C79.508 85.579 79.5015 89.6226 77.0078 92.1127L65.9346 103.17C55.7187 113.371 39.06 113.519 28.6718 103.513C28.6117 103.456 23.9861 98.9201 8.72653 83.957C-1.42528 74.0029 -2.43665 58.0749 7.11648 47.8464L24.9282 28.7745C34.4095 18.6219 51.887 17.5122 62.7275 26.2789L78.9048 39.362C81.6444 41.5776 82.0723 45.5985 79.8606 48.3429C77.6488 51.0873 73.635 51.5159 70.8954 49.3003L54.7182 36.2173C49.0488 31.6325 39.1314 32.2622 34.2394 37.5006L16.4274 56.5727C11.7767 61.5522 12.2861 69.574 17.6456 74.8292C28.851 85.8169 37.4869 94.2846 37.4969 94.2942C42.8977 99.496 51.6304 99.4184 56.9331 94.1234L68.0063 83.0664Z" fill="#FFA116"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M41.1067 72.0014C37.5858 72.0014 34.7314 69.1421 34.7314 65.615C34.7314 62.0879 37.5858 59.2286 41.1067 59.2286H88.1245C91.6454 59.2286 94.4997 62.0879 94.4997 65.615C94.4997 69.1421 91.6454 72.0014 88.1245 72.0014H41.1067Z" fill="#B3B3B3"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M49.9118 2.02335C52.3173 -0.55232 56.3517 -0.686894 58.9228 1.72277C61.494 4.13244 61.6284 8.17385 59.2229 10.7495L16.4276 56.5729C11.7768 61.552 12.2861 69.5738 17.6453 74.8292L37.4088 94.2091C39.9249 96.6764 39.968 100.72 37.505 103.24C35.042 105.761 31.0056 105.804 28.4895 103.337L8.72593 83.9567C-1.42529 74.0021 -2.43665 58.0741 7.1169 47.8463L49.9118 2.02335Z" fill="black"></path></svg></a>
+                          <a class="icon" href="https//:linkedin.com"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                          </svg></a>
+                          <a href="https://x.com/TuhinPramanik01"><img src="twitter-x.svg" alt="twitter"></a>
+                          <a href="https://github.com/TuhinPramanik4"><img src="github.svg" alt="git-hub"></a>
+                     </div>
+                </div>
+             </div>
+             
+    </sectio>
+
+
+
+    <script src="Hamburger.js"></script>
+</body>
+</html>
